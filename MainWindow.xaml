@@ -1,0 +1,30 @@
+﻿<Window x:Name="MainForm" x:Class="RacingTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RacingTest"
+        mc:Ignorable="d"
+        Title="Гонки" Height="586.139" Width="514.837">
+    <Grid Height="557" VerticalAlignment="Top" Margin="0,0,0,-2">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ButtonStart" Content="Начать гонку" IsEnabled="True" HorizontalAlignment="Left" Margin="10,0,0,71" VerticalAlignment="Bottom" Width="487" Click="ButtonStart_Click" Height="20"/>
+        <Button x:Name="ButtonStop" Content="Окончить круг" IsEnabled="False" HorizontalAlignment="Left" Margin="10,0,0,54" VerticalAlignment="Bottom" Width="487" Height="17" Click="ButtonStop_Click"/>
+        <GroupBox x:Name="GroupCars" Header="Машины" HorizontalAlignment="Left" Height="130" Margin="0,0,0,384" VerticalAlignment="Bottom" Width="507">
+            <TextBlock x:Name="CarTextBlock" HorizontalAlignment="Stretch" Margin="0,0,-2,-3" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="497"/>
+        </GroupBox>
+        <GroupBox x:Name="GroupBikes" Header="Мотоциклы" HorizontalAlignment="Left" Height="130" Margin="0,0,0,125" VerticalAlignment="Bottom" Width="507">
+            <TextBlock x:Name="BikeTextBlock" HorizontalAlignment="Stretch" Margin="0,0
+                       ,-2,3" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="497"/>
+        </GroupBox>
+        <GroupBox x:Name="TrucksCars" Header="Грузовики" HorizontalAlignment="Left" Height="130" Margin="0,0,0,255" VerticalAlignment="Bottom" Width="507">
+            <TextBlock x:Name="TruckTextBlock" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="497"/>
+        </GroupBox>
+        <Button x:Name="ButtonCreateJson" Content="Создать Json" Visibility="Hidden" IsEnabled="True" HorizontalAlignment="Left" Margin="382,0,0,29" VerticalAlignment="Bottom" Width="115" Click="ButtonCreateJson_Click" Height="20"/>
+        <Label x:Name="LabelDistance" Content="Длина круга:" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelLap" Content="Номер круга:" HorizontalAlignment="Left" Margin="337,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+{
+    "Bikes": [
+        {
+            "Carriage": true,
+            "CarriageImpact": 50.0,
+            "PunctureProb": 7,
+            "PunctureTime": "5",
+            "Speed": 90.0,
+        }
+    ],
+    "Cars": [
+        {
+            "PeopleCount": 2,
+            "PeopleImpact": 3.5,
+            "PunctureProb": 10,
+            "PunctureTime": "5",
+            "Speed": 80.0,
+        }
+    ],
+    "RaceDistance": 200.0,
+    "RefreshTime": 500,
+    "Trucks": [
+        {
+            "CargoImpact": 0.2,
+            "CargoWeight": 100.0,
+            "PunctureProb": 3,
+            "PunctureTime": "5",
+            "Speed": 40.0,
+        }
+    ]
+}

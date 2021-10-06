@@ -14,11 +14,17 @@ Race settings must be set in a .json file in working directory (config.json).
 
 "PunctureTime" - time in seconds, which require to repaire a vehicle.
 ### Car settings
-"PeopleCount" - total people count, which are in a car.
+"PeopleCount" - total people count, which are in a car;
+
+"PeopleImpact" - shows how much the speed decreases from one person in km/h.
 ### Truck settings
-"CargoWeight" - total weight in a truck in kg.
+"CargoWeight" - total weight in a truck in kg;
+
+"CargoImpact" - shows how much the speed decreases from 1 kg of weight in km/h.
 ### Bike settings
-"Carriage" - does a bike have a carriage in bool (true/false).
+"Carriage" - does a bike have a carriage in bool (true/false);
+
+"CarriageImpact" - shows how much the speed decreases from carriage in km/h.
 # Additional information
 Program written on C# on Windows 10 (.NET Framework 4.8).
 
